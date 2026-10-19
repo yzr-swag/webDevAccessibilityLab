@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Martin Cooper :: Contact Me</title>
+    <title>Contact Me</title>
     <link rel="stylesheet" href="styles/mobile.css" />
     <link
       rel="stylesheet"
@@ -24,6 +24,7 @@
             <li><a href="skill-set.html">Skill Set</a></li>
             <li><a href="work-experience.html">Work Experience</a></li>
             <li><a href="contact-me.html">Contact Me</a></li>
+            <li><a href="thank-you.html">Thank you</a></li>
           </ul>
         </nav>
       </header>
@@ -31,28 +32,29 @@
         <section>
           <h2>Contact me</h2>
           <p>
-            <img src="images/dishFive.jpg" alt="Jodrell Bank" />
+            <img src="images/dishFive.jpg" alt="" />
           </p>
 
           <form action="thank-you.html">
             <div>
-              <p>Name:</p>
+              <label for="name">Name:</label>
               <input
                 type="text"
                 name="yourName"
+                id="name"
                 placeholder="Please Add Your Name"
               />
             </div>
             <div>
-              <p>Email:</p>
-              <input type="email" name="email" placeholder="Email Address" />
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email" placeholder="Email Address" />
             </div>
             <div>
-              <p>Telephone:</p>
-              <input type="tel" name="tel" placeholder="Telephone Number" />
+              <label for="tel">Telephone:</label>
+              <input type="tel" name="tel" id = "tel" placeholder="Telephone Number" />
             </div>
             <div>
-              <p>Message:</p>
+              <label for="msg">Message:</label>
               <textarea
                 name="message"
                 id="message"
@@ -60,8 +62,8 @@
               ></textarea>
             </div>
             <div>
-              <p>Are you interested in?</p>
-              <select name="interest" id="interest">
+              <label for="interest">Are you interested in?</label>
+              <select name="interest" id="interest" aria-label="interest">
                 <option value="frontend">Frontend Web Development</option>
                 <option value="backend">Backend Web Development</option>
                 <option value="appDev">Application Development</option>
@@ -74,7 +76,7 @@
           </form>
         </section>
         <div class="sidebar">
-          <p><img src="images/square200px.png" /></p>
+          <p><img src="images/square200px.png" alt=""/></p>
           <h2>Contact Details</h2>
           <address>My Address</address>
           <p>
